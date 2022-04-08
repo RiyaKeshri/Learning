@@ -1,0 +1,470 @@
+/* -------------------------------------- */
+/* Basic setup */
+/* -------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: rgb(7, 2, 2);
+    font-family:'sans-serif','lato','roboto','shizuru' ;
+    font-weight: 300;
+    font-size: 20px0;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+/* -------------------------------------- */
+/* center the text */
+/* -------------------------------------- */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------- */
+/* Set the header img */
+/* -------------------------------------- */
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+/* -------------------------------------- */
+/* Style the  h1 tag  */
+/* -------------------------------------- */
+h1{
+    margin: 0;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 300;
+    font-size: 240%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    word-spacing: 20px;
+    margin-bottom: 30px;
+    
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #d35400;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3{
+    font-weight: 300;
+    margin-bottom: 20px; 
+    font-weight: 300;
+    display: block;
+}
+/* -------------------------------------- */
+/* Button styling */
+/* -------------------------------------- */
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 200px;
+    color: white;
+    border: 1px solid #d35400;
+
+
+}
+.btn-full:link,
+.btn-full:visited{
+    background-color: #d35400;
+
+}
+.btn-gost:visited,
+.btn-gost:link{
+color: #d35400;
+}
+.btn:hover,
+.btn:active{
+    background-color: #bd4c02;
+    color: white;
+}
+
+
+/* -------------------------------------- */
+ /* style the logo and nav bar */
+/* -------------------------------------- */
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+}
+
+.main-nav li{
+    display: inline-block;
+    padding: 25px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+text-decoration: none;
+color: white;
+letter-spacing: 1px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active
+{
+border-bottom: 2px solid white;
+color: #bd4c02 ;
+}
+
+.icon{
+    width: 50px;
+}
+.section{
+    padding: 35px 0px;
+}
+
+.section .loge-copy{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+/* -------------------------------------- */
+ /* Feature section */
+/* -------------------------------------- */
+.features div{
+    padding: 10px;
+}
+ion-icon{
+font-size: 400%;
+display: block;
+color: #bd4c02;
+}
+
+
+/* meal section  */
+.meal-showcase{
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.meal-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15) ;
+    transition: transform 0.5s,opacity 0.5s;
+    
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03) ;
+    opacity: 1;
+
+}
+
+.section-meals{
+    padding: 35px 0px;
+}
+
+
+/* -------------------------------------- */
+ /* How it work */
+/* -------------------------------------- */
+
+
+.step-box{
+    margin-top: 30px;
+}
+.step-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+}
+.step-box:last-child{
+    padding-left: 3%;
+}
+
+.app-screen{
+    width: 30%;
+    float: right;
+    margin-right: 100px;
+}
+.work-step{
+    margin-bottom: 50px;
+}
+.work-step div{
+    color: black;
+    border: 2px solid #d35400;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;   
+    padding: 5px;
+    float: left;
+    margin-right: 20px;
+}
+
+.clearflex{
+    clear: both;
+}
+
+.section-meals{
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+.section-steps{
+    padding-top: 25px;
+    background-color: rgb(235, 226, 226);
+}
+
+/* -------------------------------------- */
+ /* city Section */
+/* -------------------------------------- */
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+.box h3{
+    font-weight: 500;
+    font-size: 25px;
+}
+.city-featur{
+    margin-bottom: 25px;
+}
+.city-featur ion-icon{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #d35400;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+.city-featur a:visited,
+.city-featur a:link{
+    text-decoration: none;
+    margin-top: -15px;
+    color: #d35400; 
+    border-bottom: 1px solid #d35400;
+    transition: background-color 0.2s, color 0.2s;
+}
+.city-featur a:hover,
+.city-featur a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+.city-section{
+    padding: 35px 0px;
+}
+/* -------------------------------------- */
+ /* customer review section */
+/* -------------------------------------- */
+
+.reviewsection{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgb(0,0,0,0.8)), url(img/hero.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    color: white;
+}
+blockquote{
+    padding: 2%;
+    font-size: italic;
+    color: white;
+    line-height: 145%;
+    text-align: left;
+    word-spacing: 5px;
+}
+
+blockquote:before{
+    content: "\201c";
+    font-size: 600%;
+    display: block;
+    
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border: 2px solid #250f0034;
+    border-radius: 50%;
+    /* display: block; */
+    vertical-align: middle;
+    margin-right: 25px;
+}
+cite p{
+    display: inline;
+    border-bottom: 1px solid white;
+}
+
+.reviewsection{
+    padding: 35px 0px;
+}
+/* -------------------------------------- */
+ /* Price Section */
+/* -------------------------------------- */
+
+.price-section{
+    padding: 35px 0px;
+    background-color: rgb(235, 226, 226);
+}
+.price-section h2{
+    text-transform: uppercase;
+}
+.ps{
+    background-color: white;
+}
+
+.white-light-color{
+    background-color: rgb(240, 234, 234);
+}
+.price-head{
+    height: 150px;
+    padding: 10px;
+    border-bottom:  2px solid rgb(228, 221, 221);
+}
+.price-head h3{
+    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.price-head p{
+    margin-left: 25px;
+}
+.plan-price{
+    font-weight: 300;
+    color: #d35400;
+}
+.plan-price span{
+    font-size: 50px;
+}
+
+.price-body ul{
+    list-style: none;
+    margin: 25px;
+    word-spacing: 2px;
+}
+.price-body li{
+    padding: 5px;
+}
+.price-body ion-icon{
+    display: inline-block;
+}
+.price-footer{
+    text-align: center;
+    padding: 20px;
+    border-top:  2px solid rgb(223, 211, 211);
+}
+
+/* -------------------------------------- */
+ /* Contact Section */
+/* -------------------------------------- */
+
+.contact-section{
+    padding: 35px 0px;
+    text-align: center;
+}
+.contact-attribut label{
+    font-size: 3vh;
+    display: block;
+    float: left;
+    margin-left: 20%;
+    padding-bottom: 25px;
+   
+}
+.contact-attribut input,select,textarea{
+    display: block;
+    float: right;
+    margin-right: 20%;
+}
+.contact-attribut a{
+    margin: 25px;
+    
+}
+
+
+/* -------------------------------------- */
+ /* Footer Section */
+/* -------------------------------------- */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+.unstyle li{
+    list-style: none;
+    display: inline;
+    margin-left: 15px;
+    white-space: 2px;
+    font-weight: 400;
+
+}
+.unstyle ion-icon{
+    display: block;
+    float: right;
+}
+.footer-social ion-icon{
+    margin-left: 15px;
+}
+.footer-heading{
+    margin-top: 10px;
+    text-align: center;
+}
